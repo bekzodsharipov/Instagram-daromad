@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rus tili</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; } html, body { overflow-x: hidden; } body { background-color: #FFF5F8; } .container { max-width: 440px; width: 100%; margin: 0 auto; padding: 0px 10px; padding-top: 0; display: flex; flex-direction: column; align-items: center; font-family: sans-serif; } .header { width: 100%; background-color: white; box-shadow: 0px 4px 6.6px 0px #00000026; border-radius: 4px 4px 20px 20px; padding: 20px 34px 23px 35px; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 313px; margin-bottom: 12px; } .header__box { display: flex; align-items: center; gap: 8px; } .wrapper { background-image: url(/./images/bg.avif); background-repeat: no-repeat; margin-left: auto; max-width: 431px; margin-right: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; } .header__text { font-family: Montserrat, sans-serif; color: #000000; font-weight: 500; font-size: 17px; line-height: 100%; text-wrap: nowrap; } .header__time { font-family: Montserrat, sans-serif; font-weight: 800; font-size: 18px; line-height: 100%; text-align: center; } .title { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 30px; line-height: 120%; text-align: center; text-transform: uppercase; color: #000000; width: 100%; margin-bottom: 13px; } .title span { color: #FF698F; } .center__title { font-family: Montserrat, sans-serif; font-weight: 400; font-size: 14px; line-height: 100%; margin-bottom: 28px; } .center__title span { color: #FF0000; } .text { font-family: Poppins, sans-serif; font-weight: 500; font-size: 11px; line-height: 130%; text-align: center; max-width: 352px; padding: 7px; border: 1px solid #FF698F; border-radius: 10px; margin-bottom: 24px; } .text span { color: #FF3B6D; } .center { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; } .timer__box { font-family: Montserrat, sans-serif; font-weight: 700; font-size: 28px; line-height: 100%; text-align: center; } .center__bg { position: absolute; left: 50%; bottom: -51px; transform: translate(-55.4%); z-index: -1; } .expert__img { object-fit: contain; max-width: 259px; width: 100%; height: auto; margin-bottom: -1px; margin-left: -20px; } .event__btn { cursor: pointer; max-width: 345px; width: 100%; display: flex; align-items: center; justify-content: center; border: none; background-color: transparent; position: relative; background: linear-gradient(90deg, #FF698F 12.02%, #FC87A5 50.48%, #FF698F 88.94%); box-shadow: 0px 6px 0px 0px #DE3D66; border-radius: 30px; margin-bottom: 42px; padding: 15px 0 10px; z-index: 20; font-family: "Bebas Neue", sans-serif; color: white; font-weight: 500; font-size: 38px; line-height: 100%; text-align: center; text-transform: uppercase; } .event__btn__img { width: 100%; height: auto; } .event__list__title { font-family: Poppins, sans-serif; font-weight: 600; font-size: 22px; line-height: 20px; text-align: center; margin-top: 15px; margin-bottom: 13px; } .event__list { max-width: 351px; display: grid; grid-template: 1fr; gap: 15px; list-style: none; margin-bottom: 21px; } .event__list__item { display: flex; align-items: center; gap: 12px; overflow: hidden; } .event__list__item__number { display: flex; align-items: center; justify-content: center; flex-shrink: 0; } .event__list__item__text { font-weight: 400; font-family: Poppins, sans-serif; font-size: clamp(12px, 4vw, 14px); line-height: 125%; } .event__list__item__text span { font-weight: 600; } .blur-up { filter: blur(10px); transition: filter 0.4s ease-out; } .gift { display: flex; align-items: center; gap: 5px; width: 100%; border: 1px solid #FF698F; background-color: white; border-radius: 10px; margin-top: 22px; padding: 0 0 0 4px; max-width: 325px; margin-bottom: 32px; } .arrrow__box { position: relative; } .arrow__img { position: absolute; left: 140px; bottom: -12px; } .arrow__imgs { position: absolute; right: 140px; bottom: -9px; } .gift__img { width: clamp(52px, 16.3vw, 58px); } .gift__title { font-family: Montserrat, sans-serif; font-weight: 700; font-size: clamp(12px, 5.6vw, 14px); line-height: 100%; margin-bottom: 3px; } .gift__text { font-family: Montserrat, sans-serif; max-width: 257px; font-weight: 400; font-size: clamp(10px, 4vw, 12px); line-height: 125%; } .gift__text span { color: #CD1225; } @media (max-width:450px) { .title { font-size: 27px; } .titles { font-size: 45px; } } @media (max-width:355px) { .event__btn { font-size: 27px; } .title { font-size: 25px; } .header { padding: 20px 22px; } .arrow__img { position: absolute; left: 118px; bottom: -12px; } .arrow__imgs { position: absolute; right: 118px; bottom: -9px; } }
+    </style>
+    <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/modal.css" />
+    </noscript>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="header__box">
+                    <img src="./images/calendar.svg" alt="kalendar belgisi" style="margin-top: -3px;"
+                        class="header__text__img" width="24" height="24" loading="lazy" decoding="async">
+                    <p class="header__text">
+                        4-5-6-Dekabr
+                    </p>
+                </div>
+                <p class="header__time">20:00</p>
+            </div>
+
+            <p class="center__title">YA KUMUSHdan 3 kunlik <span>BEPUL</span> dars</p>
+
+            <h1 class="title">
+                3 KUNDA <span>KUCHLI SOTUV</span> UCHUN 5 TA QADAMNI <span>BEPULGA</span> O’RGATAMAN
+            </h1>
+
+            <p class="text">5000 dan ziyod o’quvchilarim <span>Instagram orqali</span> mijozlar va retseptlar bazasini oshirib, <span>500$
+                dan 1000$ gacha daromadga</span> chiqdi</p>
+            <img src="./images/speaker.avif" alt="Invertor rasmi" class="expert__img minifyImg" decoding="async"
+                loading="lazy" width="259" height="263">
+
+            <button class="event__btn registerBtn">
+                bepul qatnashish </button>
+
+
+            <div class="timer__box">01:51</div>
+
+            <div class="arrrow__box">
+                <img class="arrow__img" src="./images/arrow-left.svg" loading="lazy" alt="arrow-left">
+                <img class="arrow__imgs" src="./images/arrow-right.svg" loading="lazy" alt="arrow-right">
+            </div>
+
+            <div class="gift">
+                <img src="./images/gift.avif" class="gift__img" alt="">
+                <div class="">
+                    <h3 class="gift__title">Ro’yxatdan o’tganlar uchun sovg’a:</h3>
+                    <p class="gift__text">Instagram orqali sotish va mizojlar bazasini oshiradigan 5 ta qadam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="event__list__title">BEPUL darsda:</h2>
+        <ul class="event__list">
+            <li class="event__list__item">
+                <div class="event__list__item__number">
+                    <img src="./images/verify.svg" alt="event language" width="31" height="31" decoding="async"
+                        loading="lazy">
+                </div>
+                <p class="event__list__item__text">
+                    Mijozlar va <span>shirinliklar bazasi</span>ni <br> kengaytirshni
+                </p>
+            </li>
+            <li class="event__list__item">
+                <div class="event__list__item__number">
+                    <img src="./images/verify.svg" alt="event language" width="31" height="31" decoding="async"
+                        loading="lazy">
+                </div>
+                <p class="event__list__item__text">
+                    Instagram va telegram orqali oyiga <span>2000$ <br> dan 3000$ gacha</span> biznes strategiyani
+                </p>
+            </li>
+            <li class="event__list__item">
+                <div class="event__list__item__number">
+                    <img src="./images/verify.svg" alt="event language" width="31" height="31" decoding="async"
+                        loading="lazy">
+                </div>
+                <p class="event__list__item__text">
+                    Faqat <span>tanishlarga sotmasdan</span>, yillab <br> tajriba yig’masdan <span>mijozlarni <br>
+                        ko’paytirish</span> va <span>sotishni o’rganasiz</span>
+                </p>
+            </li>
+        </ul>
+        <button class="event__btn registerBtn">
+            bepul qatnashish </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="registrationModal" class="homeModal" style="display: none">
+        <div class="homeModalOverlay"></div>
+        <div class="homeFormContainer">
+            <button class="closeButton" id="closeModalBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+                    <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="homeFormTop">
+                <h1 class="homeFormTopTitle">
+                    Bepul darsga <br />
+                    RO'YXATDAN O'TISH
+                </h1>
+            </div>
+            <form id="registrationForm" name="contact-form">
+                <div class="HomeFormRow">
+                    <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+                    <div class="phone-input-container">
+                        <div class="country-selector">
+                            <div class="selected-country" id="selectedCountry">
+                                <span id="selectedCountryCode">+998</span>
+                                <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="country-dropdown" id="countryDropdown" style="display: none"></div>
+                        </div>
+                        <input class="HomeFormRowInput" type="tel" id="phone" name="phone" placeholder="88 888 88 88"
+                            autocomplete="tel" />
+                    </div>
+                    <p class="homeFormErrorText" id="phoneError" style="display: none">
+                        ❌ Telefon raqam mos emas!
+                    </p>
+                </div>
+                <button type="submit" class="HomeFormBtn" id="submitBtn">
+                    ro’yxatdan o’tish </button>
+            </form>
+        </div>
+    </div>
+
+    <script defer src="./js/app.js"></script>
+</body>
+
+</html>
