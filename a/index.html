@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zinnuza</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; } html, body { overflow-x: hidden; } body { background-color: #161616; } .container { max-width: 490px; width: 100%; margin: 0 auto; padding: 0px 10px; padding-top: 0; display: flex; flex-direction: column; align-items: center; font-family: sans-serif; } .header { width: 100%; background-color: #1F1F1F; box-shadow: 0px 3px 4.6px 0px #00000017; border-radius: 4px 4px 20px 20px; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; min-width: 313px; max-width: 398px; margin-bottom: 26px; } .header__box { display: flex; align-items: center; gap: 8px; } .wrapper { background-image: url(/./images/bg.avif); background-repeat: no-repeat; margin-left: auto; max-width: 431px; margin-right: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; } .header__text { font-family: Montserrat, sans-serif; color: white; font-weight: 500; font-size: 18px; line-height: 100%; text-wrap: nowrap; } .header__time { font-family: Montserrat, sans-serif; font-weight: 700; font-size: 20px; line-height: 100%; color: white; text-align: center; } .title { font-family: "Big Shoulders Display", sans-serif; font-weight: 800; font-size: clamp(19.5px, 6vw, 27px); line-height: 125%; text-align: center; text-transform: uppercase; color: white; max-width: 446px; width: 100%; margin-bottom: 7px; } .title span { color: #FF2929; } .text { font-family: Poppins, sans-serif; font-weight: 500; font-size: 13px; line-height: 130%; text-align: center; max-width: 435px; padding: 10px 0; border: 3px solid transparent; border-image: linear-gradient(89.93deg, #161616, #CD1225, #161616) 1; border-radius: 10px; margin-bottom: 24px; color: white; } .text span { font-weight: 700; } .center { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; } .timer__box { font-family: "Bebas Neue", sans-serif; font-weight: 700; color: white; font-size: 42px; line-height: 100%; text-align: center; } .center__bg { position: absolute; left: 50%; bottom: -51px; transform: translate(-55.4%); z-index: -1; } .expert__img { max-width: 260px; width: 100%; height: auto; position: relative; z-index: 20; margin-bottom: -55px; margin-left: -20px; } .event__btn { cursor: pointer; max-width: 358px; background-color: #1F1F1F; width: 100%; display: flex; align-items: center; justify-content: center; border: none; position: relative; margin-bottom: 21px; margin-top: 50px; z-index: 20; } .event__btn__img { width: 100%; height: auto; } .event__list__title { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 32px; line-height: 120%; color: white; text-align: start; margin-bottom: 5px; } .event__list { max-width: 351px; display: grid; grid-template: 1fr; gap: 15px; list-style: none; margin-bottom: 21px; } .event__list__item { display: flex; align-items: center; gap: 12px; color: white; overflow: hidden; } .event__list__item__number { display: flex; align-items: center; justify-content: center; flex-shrink: 0; background-color: #35649F; border-radius: 10px; padding: 12px 13px 13px 12px; } .event__list__item__text { font-weight: 400; font-family: Poppins, sans-serif; font-size: clamp(12px, 4vw, 16px); line-height: 125%; } .event__list__item__text span { font-weight: 600; } .blur-up { filter: blur(10px); transition: filter 0.4s ease-out; } .gift { display: flex; align-items: center; gap: 11px; width: 100%; border: 1px solid #E6182D; box-shadow: 0px 0px 25px 0px #E6182D80; background-color: #1F1F1F; border-radius: 20px; color: white; margin-top: 22px; padding: 0 0 0 4px; max-width: 345px; padding: 10px 15px; margin-bottom: 30px; } .shadoow { background-color: #E6182DB2; width: 322px; height: 151px; filter: blur(100px); top: 380px; position: absolute; } .arrrow__box { position: relative; } .arrow__img { position: absolute; left: 100px; bottom: -20px; } .arrow__imgs { position: absolute; right: 100px; bottom: -20px; } .gift__img { width: clamp(63px, 16.3vw, 79px); } .gift__title { font-family: "Bebas Neue", sans-serif; font-weight: 800; font-size: clamp(29px, 5vw, 32px); line-height: 100%; margin-bottom: 2px; } .gift__text { font-family: Montserrat, sans-serif; max-width: 227px; font-weight: 400; font-size: clamp(10px, 4vw, 13px); line-height: 150%; } @media (max-width:450px) { .titles { font-size: 45px; } } @media (max-width:355px) { .event__btn img { width: 100%; } .header { padding: 20px 22px; } .event__list__title { font-size: 29px; margin-bottom: 10px; } .arrow__img { position: absolute; left: 66px; bottom: -12px; } .arrow__imgs { position: absolute; right: 75px; bottom: -9px; } .expert__img { max-width: 230px; } }
+    </style>
+    <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/modal.css" />
+    </noscript>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="header__box">
+                    <img src="./images/calendar.svg" alt="kalendar belgisi" style="margin-top: -3px;"
+                        class="header__text__img" width="24" height="24" loading="lazy" decoding="async">
+                    <p class="header__text">
+                        4-5-6-Dekabr
+                    </p>
+                </div>
+                <p class="header__time">20:00</p>
+            </div>
+
+            <h1 class="title">
+                <span>NARXLARNI TUSHURMASDAN,</span> INSTAGRAM ORQALI <span>500$ DAN 1000$ GACHA</span> DAROMAD
+                QILISHNI SINALGAN USULI
+            </h1>
+
+            <p class="text">5000 dan ziyod o’quvchilarim <span>Instagram orqali</span> mijozlar va retseptlar bazasini
+                oshirib, <span>500$ dan 1000$ gacha daromad</span>ga chiqdi</p>
+            <div class="shadoow"></div>
+
+            <img src="./images/speaker.avif" alt="Invertor rasmi" class="expert__img minifyImg" decoding="async"
+                loading="lazy" width="260" height="325">
+
+            <button class="event__btn registerBtn">
+                <img src="./images/btn.avif" width="358" alt="btn">
+            </button>
+
+            <div class="timer__box">01:51</div>
+
+            <div class="arrrow__box">
+                <img class="arrow__img" src="./images/arrow-left.svg" loading="lazy" alt="arrow-left">
+                <img class="arrow__imgs" src="./images/arrow-right.svg" loading="lazy" alt="arrow-right">
+            </div>
+
+            <div class="gift">
+                <img src="./images/gift.avif" loading="lazy" class="gift__img" alt="btn">
+                <div class="">
+                    <h3 class="gift__title">SOVG’A!</h3>
+                    <p class="gift__text">Instagram orqali sotish va mizojlar bazasini oshiradigan 5 ta qadam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="event__list__title">3 KUNLIK BEPUL DARSDA SIZ:</h2>
+        <ul class="event__list">
+            <li class="event__list__item">
+                <div class="event__list__item__number">
+                    <img src="./images/list1.avif" alt="event language" width="31" height="31" decoding="async"
+                        loading="lazy">
+                </div>
+                <p class="event__list__item__text">
+                    Mijozlar va <span>shirinliklar bazasi</span>ni <br> kengaytirshni
+                </p>
+            </li>
+            <li class="event__list__item">
+                <div class="event__list__item__number">
+                    <img src="./images/list2.avif" alt="event language" width="31" height="31" decoding="async"
+                        loading="lazy">
+                </div>
+                <p class="event__list__item__text">
+                    Instagram va telegram orqali oyiga <br> <span>2000$ dan 3000$ gacha</span> biznes <br> strategiyani
+                </p>
+            </li>
+            <li class="event__list__item">
+                <div class="event__list__item__number">
+                    <img src="./images/list3.avif" alt="event language" width="31" height="31" decoding="async"
+                        loading="lazy">
+                </div>
+                <p class="event__list__item__text">
+                    Faqat <span>tanishlarga sotmasdan</span>, yillab <br> tajriba yig’masdan mijozlarni <br>
+                    ko’paytirish va sotishni o’rganasiz</span>
+                </p>
+            </li>
+        </ul>
+        <button class="event__btn registerBtn" style="margin-top: 10px;">
+            <img src="./images/btn.avif" loading="lazy" width="358" alt="btn">
+        </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="registrationModal" class="homeModal" style="display: none">
+        <div class="homeModalOverlay"></div>
+        <div class="homeFormContainer">
+            <button class="closeButton" id="closeModalBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+                    <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="homeFormTop">
+                <h1 class="homeFormTopTitle">
+                    Bepul darsga <br />
+                    RO'YXATDAN O'TISH
+                </h1>
+            </div>
+            <form id="registrationForm" name="contact-form">
+                <div class="HomeFormRow">
+                    <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+                    <div class="phone-input-container">
+                        <div class="country-selector">
+                            <div class="selected-country" id="selectedCountry">
+                                <span id="selectedCountryCode">+998</span>
+                                <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="country-dropdown" id="countryDropdown" style="display: none"></div>
+                        </div>
+                        <input class="HomeFormRowInput" type="tel" id="phone" name="phone" placeholder="88 888 88 88"
+                            autocomplete="tel" />
+                    </div>
+                    <p class="homeFormErrorText" id="phoneError" style="display: none">
+                        ❌ Telefon raqam mos emas!
+                    </p>
+                </div>
+                <button type="submit" class="HomeFormBtn" id="submitBtn">
+                    ro’yxatdan o’tish </button>
+            </form>
+        </div>
+    </div>
+
+    <script defer src="./js/app.js"></script>
+</body>
+
+</html>
